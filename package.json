@@ -4,6 +4,10 @@
   "type": "module",
   "dependencies": {
     "@cap-js/hana": "^3",
+    "@sap-cloud-sdk/connectivity": "^3.26.4",
+    "@sap-cloud-sdk/http-client": "^3.26.4",
+    "@sap-cloud-sdk/resilience": "^3.26.4",
+    "@sap-cloud-sdk/util": "^3.26.4",
     "@sap/cds": "^10",
     "@sap/xssec": "^4"
   },
@@ -49,7 +53,11 @@
       },
       "destinations": true,
       "html5-repo": true,
-      "workzone": true
+      "workzone": true,
+      "API_BUSINESS_PARTNER": {
+        "kind": "odata-v2",
+        "model": "srv/external/API_BUSINESS_PARTNER"
+      }
     }
   }
 }
